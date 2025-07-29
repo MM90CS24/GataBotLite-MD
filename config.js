@@ -6,29 +6,20 @@ import cheerio from 'cheerio'
 import fetch from 'node-fetch'
 import axios from 'axios'
 import moment from 'moment-timezone'
-import { en, es, id, ar, pt, de, it } from './lib/idiomas/total-idiomas.js'
+import { es } from './lib/idiomas/total-idiomas.js'
 
 // ES ➜ Agregué primero el número del Bot como prioridad
 // ES ➜ Si desea recibir reportes debe de usar los tres parámetros (Número, nombre y true)
 // EN ➜ Add the Bot number as priority first
 // EN ➜ If you want to receive reports you must use the three parameters (Number, name and true)
 global.owner = [
-['5214774444444', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 🌻🐈', true], 
-['593968263524', '𝙂𝘽 𝘼𝙨𝙞𝙨𝙩𝙚𝙣𝙘𝙞𝙖 🌻🐈', true],
-['573012482597'],
-['5218715746374'],
-['5492266613038'], 
-['595976126756'],
-['593968585383'],
-['5219999699999'],
-['5216646666666'],
-['51968382008']]
+['5356857364', 'MM90CS', true]]
 
 global.mods = [] 
 global.prems = []
 
 // Cambiar a false para desactivar en "auto-reconexion" de sub-bots
-global.gataJadibts = true
+global.gataJadibts = false
 
 // Cambiar a false para usar el Bot desde el mismo numero del Bot.
 global.isBaileysFail = true
@@ -79,14 +70,14 @@ global.fetch = fetch
 global.axios = axios
 global.moment = moment	
 
-global.packname = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 🌻🐈'
-global.author = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
+global.packname = 'MM90CSxD'
+global.author = 'MM90'
 global.policyGB = 'github.com/GataNina-Li/GataBot-MD/blob/master/terms.md'
 
 // ES ➜ Está parte es para mostrar el contacto de alguien al usar #contacto
 // EN ➜ This part is to display someone's contact using #contact
 global.official = [ 
-['593968263524', 'Gata Dios 💻', 1], 
+['593968263524', 'Piña', 1], 
 ['573147616444', '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
 ['5214434703586', '𝗖𝘂𝘀𝘁𝗼𝗺𝗲𝗿 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 🥏', 1],
 ['5521989092076', '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1]] 
@@ -117,9 +108,9 @@ global.waitemot = '⌛'
 global.waitemot2 = '⏳'
 
 // redes
-global.tk = 'https://www.tiktok.com/@gata_dios'
-global.ths = 'https://www.threads.net/@gata_dios'
-global.yt = 'https://youtube.com/@gatadios'
+global.tk = 'https://www.tiktok.com/'
+global.ths = 'https://www.threads.net/'
+global.yt = 'https://youtube.com/'
 global.yt2 = 'https://youtu.be/Ko019wvu2Tc'
 global.ig = 'https://www.instagram.com/gata_dios'
 global.md = 'https://github.com/GataNina-Li/GataBotLite-MD'
